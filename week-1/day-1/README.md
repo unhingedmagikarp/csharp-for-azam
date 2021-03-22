@@ -89,7 +89,7 @@ Get into *real* programming, installing a development environment and then runni
 ```csharp
 using System;
 
-namespace GreenFox
+namespace PracticeTask
 {
     class Program
     {
@@ -114,7 +114,7 @@ namespace GreenFox
 ```csharp
 using System;
 
-namespace GreenFox
+namespace PracticeTask
 {
     class Program
     {
@@ -138,7 +138,7 @@ namespace GreenFox
 ```csharp
 using System;
 
-namespace GreenFox
+namespace PracticeTask
 {
     class Program
     {
@@ -170,7 +170,7 @@ namespace GreenFox
 ```csharp
 using System;
 
-namespace GreenFox
+namespace PracticeTask
 {
     class Program
     {
@@ -194,7 +194,7 @@ namespace GreenFox
 ```csharp
 using System;
 
-namespace GreenFox
+namespace PracticeTask
 {
     class Program
     {
@@ -231,7 +231,7 @@ namespace GreenFox
 ```csharp
 using System;
 
-namespace GreenFox
+namespace PracticeTask
 {
     class Program
     {
@@ -269,7 +269,7 @@ namespace GreenFox
 ```csharp
 using System;
 
-namespace GreenFox
+namespace PracticeTask
 {
     class Program
     {
@@ -312,7 +312,7 @@ namespace GreenFox
 ```csharp
 using System;
 
-namespace GreenFox
+namespace PracticeTask
 {
     class Program
     {
@@ -385,7 +385,7 @@ namespace GreenFox
 ### User input (scanner)
 
 ```csharp
-namespace GreenFox
+namespace PracticeTask
 {
     class Program
     {
@@ -417,7 +417,7 @@ namespace GreenFox
 ```csharp
 using System;
 
-namespace GreenFox
+namespace PracticeTask
 {
     class Program
     {
@@ -507,7 +507,7 @@ namespace GreenFox
 ```csharp
 using System;
 
-namespace GreenFox
+namespace PracticeTask
 {
     class Program
     {
@@ -550,7 +550,7 @@ namespace GreenFox
 ```csharp
 using System;
 
-namespace GreenFox
+namespace PracticeTask
 {
     class Program
     {

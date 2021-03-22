@@ -1,6 +1,6 @@
 using System;
 
-namespace GreenFox
+namespace PracticeTask
 {
     class Program
     {
