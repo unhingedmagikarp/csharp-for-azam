@@ -598,4 +598,3 @@ namespace PracticeTask
  -  [34 - ParametricAverage](parametric-average/ParametricAverage.cs)
  -  [35 - DrawChessTable](draw-chess-table/DrawChessTable.cs)
  -  [Find the substring](substr/SubStr.cs)
- -  [Print Params](print-params/PrintParams.cs)
