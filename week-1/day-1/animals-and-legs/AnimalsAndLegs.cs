@@ -15,7 +15,7 @@ namespace PracticeTask
             Console.WriteLine("How many pigs do you have?");
             int pigs = Convert.ToInt32(Console.ReadLine());
 
-            int legs = chickens * 4 + pigs * 4;
+            int legs = chickens * 2 + pigs * 4;
 
             Console.WriteLine($"That's {legs} legs");
         }
