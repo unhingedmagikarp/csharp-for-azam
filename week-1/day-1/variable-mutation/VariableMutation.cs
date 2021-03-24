@@ -58,13 +58,43 @@ namespace PracticeTask
             // cause IDE says so
             var h = 1357988018575474;
             // tell if 11 is a divisor of h (print as a boolean)
+            if (h % 11 == 0)
+            {
+                Console.WriteLine($"{true}");
+            }
+            else
+            {
+                Console.WriteLine($"{false}");
+            }
 
             int i1 = 10;
             int i2 = 3;
+            var i2Squared = Math.Sqrt(i2);
+            var i1Cubed = Math.Pow(1, 1);
             // tell if i1 is higher than i2 squared and smaller than i2 cubed (print as a boolean)
+            if (i1 > i2Squared && i1 < i1Cubed)
+            {
+                Console.WriteLine($"{true}");
+            }
+            else
+            {
+                Console.WriteLine($"{false}");
+            }
+            Console.ReadLine();
+
 
             int j = 1521;
             // tell if j is divisible by 3 or 5 (print as a boolean)
+
+            if (j % 3 == 0 || j % 5 == 0)
+            {
+                Console.WriteLine($"{true}");
+            }
+            else
+            {
+                Console.WriteLine($"{false}");
+            }
+            Console.ReadLine();
         }
     }
 }
