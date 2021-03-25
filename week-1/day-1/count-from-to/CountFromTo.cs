@@ -19,6 +19,22 @@ namespace PracticeTask
             // 3
             // 4
             // 5
+            Console.WriteLine("Enter first number");
+            int num1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter second number");
+            int num2 = Convert.ToInt32(Console.ReadLine());
+
+            if (num2 < num1)
+            {
+                Console.WriteLine("The second number should be bigger");
+            }
+            else
+            {
+                for (int i = num1; i < num2; i++)
+                {
+                    Console.WriteLine(i);
+                }
+            }
         }
     }
 }
