@@ -64,7 +64,7 @@ namespace Example
 - [Sum elements](sum-elements/SumElements.cs)
 - [Change element](change-element/ChangeElement.cs)
 - [Increment element](increment-element/IncrementElement.cs)
-- [Print elements](print-all/PrintAll.cs)
+- [Print all](print-all/PrintAll.cs)
 - [Matrix](diagonal-matrix/DiagonalMatrix.cs)
 - [Double items](double-items/DoubleItems.cs)
 - [Colors](colors/Colors.cs)
