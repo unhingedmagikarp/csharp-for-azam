@@ -12,6 +12,18 @@ namespace PracticeTask
             // integers like:
             //
             // Sum: 22, Average: 4.4
+
+            string number;
+            double total = 0;
+            int numbers = 0;
+            while ((number = Console.ReadLine()) != "")
+            {
+                var average = total / numbers;
+                total += double.Parse(number);
+                numbers++;
+
+                Console.WriteLine("Sum: " + total + ", " + "Average: " + average);
+            }
         }
     }
 }
