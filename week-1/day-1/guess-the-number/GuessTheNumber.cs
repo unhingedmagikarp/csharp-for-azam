@@ -13,6 +13,32 @@ namespace PracticeTask
             // The stored number is higher
             // The stried number is lower
             // You found the number: 8
+            Random r = new Random();
+
+            int val = r.Next(1, 100);
+            bool correct = false;
+
+            Console.WriteLine("I'm thinking of a random number...");
+
+            while (!correct)
+            {
+                Console.Write("Guess: ");
+                int guess = Convert.ToInt32(Console.ReadLine());
+
+                if (guess < val)
+                {
+                    Console.WriteLine("The stored number is higher");
+                }
+                else if (guess > val)
+                {
+                    Console.WriteLine("The stored number is lower");
+                }
+                else
+                {
+                    correct = true;
+                    Console.WriteLine("You found the number: " + val);
+                }
+            }
         }
     }
 }
