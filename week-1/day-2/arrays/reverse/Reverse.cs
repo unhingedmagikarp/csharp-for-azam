@@ -10,7 +10,12 @@ namespace Reverse
             //   with the following content: `[3, 4, 5, 6, 7]`
             // - Reverse the order of the elements of `numbers`
             // - Print the elements of the reversed `numbers`
-            Console.ReadLine();
+            int[] numbers = { 3, 4, 5, 6, 7 };
+
+            for (int i = numbers.Length - 1; i >= 0; i--)
+            {
+                Console.Write(numbers[i]);
+            }
         }
     }
 }
