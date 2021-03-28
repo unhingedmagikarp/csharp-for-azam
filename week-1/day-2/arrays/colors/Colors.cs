@@ -14,7 +14,13 @@ namespace Colors
             //   `"orange red", "red", "tomato"`
             // - In `colors[2]` store the shades of pink:
             //   `"orchid", "violet", "pink", "hot pink"`
-            Console.ReadLine();
+            //They need to be the same length 
+            string[,] colors =
+            {
+                {"green", "lime", "forest green", "olive", "pale green", "spring green" },
+                {"orange red", "red", "tomato", "", "", ""},
+                {"orchid", "violet", "pink", "hot pink", "", ""}
+            };
         }
     }
 }
