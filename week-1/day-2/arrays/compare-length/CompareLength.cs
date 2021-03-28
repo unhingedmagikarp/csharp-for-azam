@@ -14,7 +14,18 @@ namespace CompareLength
             //   `secondArrayOfNumbers` has more elements than
             //   `firstArrayOfNumbers`
             // - Otherwise print: "firstArrayOfNumbers is the longer one"
-            Console.ReadLine();
+            int[] firstArrayOfNumbers = { 1, 2, 3 };
+            int[] secondArrayOfNumbers = { 4, 5 };
+
+
+            if (secondArrayOfNumbers.Length > firstArrayOfNumbers.Length)
+            {
+                Console.WriteLine("secondArrayOfNumbers is longer");
+            }
+            else
+            {
+                Console.WriteLine("firstArrayOfNumbers is the longer one");
+            }
         }
     }
 }
