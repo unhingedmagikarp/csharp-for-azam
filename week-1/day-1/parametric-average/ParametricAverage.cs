@@ -16,6 +16,7 @@ namespace PracticeTask
             string number;
             double total = 0;
             int numbers = 0;
+            Console.Write("Enter numbers ...");
             while ((number = Console.ReadLine()) != "")
             {
                 var average = total / numbers;
