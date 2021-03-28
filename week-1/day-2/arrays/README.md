@@ -65,7 +65,7 @@ namespace Example
 - [Change element](change-element/ChangeElement.cs)
 - [Increment element](increment-element/IncrementElement.cs)
 - [Print all](print-all/PrintAll.cs)
-- [Matrix](diagonal-matrix/DiagonalMatrix.cs)
+- [Diagonal Matrix](diagonal-matrix/DiagonalMatrix.cs)
 - [Double items](double-items/DoubleItems.cs)
 - [Colors](colors/Colors.cs)
 - [Append a](append-a/AppendA.cs)
