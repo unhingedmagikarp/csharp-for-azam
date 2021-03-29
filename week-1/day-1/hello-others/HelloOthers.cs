@@ -12,6 +12,10 @@ namespace PracticeTask
             // Hello, Esther!
             // Hello, Mary!
             // Hello, Joe!
+
+            Console.WriteLine("Hello, Esther!");
+            Console.WriteLine("Hello, Mary!");
+            Console.WriteLine("Hello, Joe!");
         }
     }
 }

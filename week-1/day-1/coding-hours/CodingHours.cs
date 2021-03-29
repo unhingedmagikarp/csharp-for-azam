@@ -14,6 +14,24 @@ namespace PracticeTask
             //
             // Print the percentage of the coding hours in the semester if the average
             // work hours weekly is 52
+
+
+            var codeHoursDaily = 6;
+            var semester = 17;
+            var workDaysOnlySemester = 5 * semester;
+            var hoursSpentCoding = codeHoursDaily * workDaysOnlySemester;
+
+            Console.WriteLine("Hours spend coding: " + hoursSpentCoding);
+
+            var longHoursDaily = 52 / 5;
+            var longHoursSpentCoding = longHoursDaily * workDaysOnlySemester;
+
+            //what do i do here, i give up
+            var percentageOfLongCodingHours = 0;
+
+
+
+            Console.ReadLine();
         }
     }
 }

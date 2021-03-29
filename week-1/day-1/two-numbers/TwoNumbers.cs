@@ -19,6 +19,23 @@ namespace PracticeTask
             // Print the integer part of 22 divided by 13
 
             // Print the remainder of 22 divided by 13
+
+            Console.WriteLine(22 + 13);
+            Console.WriteLine(22 - 13);
+            Console.WriteLine(22 * 13);
+            Console.WriteLine(((double)22 / 13).ToString("n2"));
+            Console.WriteLine(22 / 13);
+
+            var calc = ((double)22 / 13).ToString("n2");
+            var splitCalc = calc.Split('.');
+            var lastValue = int.Parse(splitCalc[1]);
+            var lastInt = Math.Abs(lastValue) % 10;
+
+            Console.WriteLine(lastInt);
+
+
+            Console.ReadLine();
+
         }
     }
 }

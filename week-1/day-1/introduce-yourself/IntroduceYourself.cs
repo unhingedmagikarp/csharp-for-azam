@@ -16,6 +16,11 @@ namespace PracticeTask
             //  John Doe
             //  31
             //  1.87
+
+            Console.WriteLine("Bee M");
+            Console.WriteLine(69);
+            Console.WriteLine(911);
+            Console.ReadLine();
         }
     }
 }

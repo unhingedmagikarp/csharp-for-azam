@@ -9,6 +9,10 @@ namespace PracticeTask
             double a = 24;
             int output1 = 0;
             // if a is even increment output1 by one
+            if (a % 2 == 0)
+            {
+                output1++;
+            }
 
             Console.WriteLine(output1);
 
@@ -17,6 +21,18 @@ namespace PracticeTask
             // if b is between 10 and 20 set output2 to "Sweet!"
             // if less than 10 set output2 to "Less!",
             // if more than 20 set output2 to "More!"
+            if (b < 10)
+            {
+                output2 = "Less!";
+            }
+            else if (b > 20)
+            {
+                output2 = "More!";
+            }
+            else
+            {
+                output2 = "Sweet!";
+            }
 
             Console.WriteLine(output2);
 
@@ -28,8 +44,19 @@ namespace PracticeTask
             // if credits are smaller than 50,
             // and isBonus is false decrement c by 1
             // if isBonus is true c should remain the same
+            if (credits == 50 && isBonus == false)
+            {
+                c -= 2;
+            }
+            else if (credits < 50 && isBonus == false)
+            {
+                c -= 1;
+            }
+            else if (isBonus == true)
+            {
+                Console.WriteLine(c);
+            }
 
-            Console.WriteLine(c);
 
             int d = 8;
             int time = 120;
@@ -40,6 +67,20 @@ namespace PracticeTask
             // if time is more than 200
             // set output3 to "Time output"
             // otherwise set output3 to "Run Forest Run!"
+
+            if (d % 4 == 0 && time < 200)
+            {
+                output3 = "check";
+            }
+            else if (time > 200)
+            {
+                output3 = "Time Output";
+            }
+            else
+            {
+                output3 = "Run Forest Run!";
+            }
+
 
             Console.WriteLine(output3);
         }

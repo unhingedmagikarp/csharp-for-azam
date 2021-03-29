@@ -21,6 +21,15 @@ namespace PracticeTask
             // 8 * 15 = 120
             // 9 * 15 = 135
             // 10 * 15 = 150
+
+            Console.WriteLine("Enter number");
+            int num = Convert.ToInt32(Console.ReadLine());
+
+            for (int i = 1; i <= 10; i++)
+            {
+                Console.Write("{0} X {1} = {2} \n", num, i, num * i);
+            }
+            Console.ReadLine();
         }
     }
 }
