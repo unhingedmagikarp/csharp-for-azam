@@ -10,8 +10,8 @@
 
 ## Lessons
 - [Day 1 - Expressions and Control flow](https://github.com/peter-keller/csharp-for-azam/blob/master/week-1/day-1/)
-- [Day 2 - Arrays and functions]()
-- [Day 3 - Data structures and practice]()
+- [Day 2 - Arrays and functions](https://github.com/peter-keller/csharp-for-azam/blob/master/week-1/day-2/)
+- [Day 3 - Data structures and practice](https://github.com/peter-keller/csharp-for-azam/blob/master/week-1/day-3/)
 - [Day 4 - Drawing]()
 - [Day 5 - Project]()
 
