@@ -1,4 +1,5 @@
 using System;
+using System.Text;
 
 namespace TodoPrint
 {
@@ -17,6 +18,12 @@ namespace TodoPrint
             //  - Buy milk
             //  - Download games
             //      - Diablo
+
+            StringBuilder sb = new StringBuilder(todoText);
+            sb.Insert(0, "My todo:\n");
+            sb.Append(" - Download games\n");
+            sb.Append("\t- Diablo");
+            todoText = sb.ToString();
 
             Console.WriteLine(todoText);
         }
