@@ -18,8 +18,20 @@ namespace CandyShop
             // No, don't just remove the lines
             // Create a method called Sweets() which takes the list as a parameter.
 
-            Console.WriteLine(Sweets(list));
+            Sweets(list);
             // Expected output: "Cupcake", "Croissant", "Brownie", "Ice cream"
+        }
+        private static void Sweets(List<object> input)
+        {
+            input.Remove(false);
+            input.Remove(2);
+            input.Insert(1, "Croissant");
+            input.Insert(3, "Ice cream");
+
+            foreach (var item in input)
+            {
+                Console.Write($"{item}, ");
+            }
         }
     }
 }
