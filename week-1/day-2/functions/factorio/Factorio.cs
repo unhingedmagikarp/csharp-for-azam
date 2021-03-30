@@ -8,7 +8,17 @@ namespace Factorio
         {
             // - Create a function called `calculateFactorial()`
             //   that returns the factorial of its input
-            Console.ReadLine();
+            int num = 5;
+            CalculateFactorial(num);
+        }
+        static void CalculateFactorial(int input)
+        {
+            int f = input;
+            for (int i = f - 1; i > 0; i--)
+            {
+                f *= i;
+            }
+            Console.WriteLine(f);
         }
     }
 }

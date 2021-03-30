@@ -19,7 +19,21 @@ namespace DiagonalMatrix
             //   Its length should depend on a variable
             //  
             // - Print this two dimensional array to the output
-            Console.ReadLine();
+
+            int rows = 4;
+            int columns = 4;
+
+            int[,] myMatrix = new int[rows, columns];
+
+            for (int row = 0; row < rows; row++)
+            {
+                for (int column = 0; column < columns; column++)
+                {
+                    myMatrix[row, column] = rows;
+                }
+            }
+
+            Console.Write(myMatrix);
         }
     }
 }

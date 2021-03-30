@@ -15,7 +15,11 @@ namespace PrintParams
             // PrintParams("first", "second")
             // PrintParams("first", "second", "third", "fourh")
             // ...
-            Console.ReadLine();
+            PrintParams("yes", "second");
+        }
+        static void PrintParams(string input1, string input2)
+        {
+            Console.WriteLine(input1, input2);
         }
     }
 }

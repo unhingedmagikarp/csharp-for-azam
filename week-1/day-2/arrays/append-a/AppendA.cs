@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 
 namespace AppendA
 {
@@ -12,7 +13,10 @@ namespace AppendA
             //     "hyen", "hydr", "iguan", "impal", "pum", "tarantul", "pirahn"]`
             //
             // - Add all elements an `"a"` at the end
-            Console.ReadLine();
+
+            string[] animals = { "koal", "pand", "zebr", "anacond", "bo", "chinchill", "cobr", "gorill", "hyen", "hydr", "iguan", "impal", "pum", "tarantul", "pirahn" };
+            string result = string.Join(", ", animals.Select(e => e + "a"));
+            Console.WriteLine(result);
         }
     }
 }
