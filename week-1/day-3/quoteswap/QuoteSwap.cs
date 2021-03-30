@@ -15,8 +15,21 @@ namespace QuoteSwap
             // Create a method called QuoteSwap().
 
             // Also, print the sentence to the output with spaces in between.
-            Console.WriteLine(QuoteSwap(list));
+            QuoteSwap(list);
             // Expected output: "What I cannot create I do not understand." 
+            private static void QuoteSwap(List<string> input)
+            {
+                input.Remove("cannot");
+                input.Insert(2, "cannot");
+                input.Remove("create,");
+                input.Insert(3, "create");
+                input.Remove("do");
+                input.Insert(5, "do");
+                foreach (var item in input)
+                {
+                    Console.Write($"{item} ");
+                }
+            }
         }
     }
 }
