@@ -13,5 +13,11 @@ namespace Reverse
 
             Console.WriteLine(Reverse(toBeReversed));
         }
+        public static string Reverse(string input)
+        {
+            char[] array = input.ToCharArray();
+            Array.Reverse(array);
+            return new String(array);
+        }
     }
 }

@@ -50,6 +50,30 @@ namespace StudentCounter
             // Display the following things:
             //  - The names of students who have more than 4 candies
             //  - The sum of the age of people who have less than 5 candies
+            //map.Select(i => $"{i.Key}: {i.Value}").ToList().ForEach(Console.WriteLine);
+
+            foreach (var item in map)
+            {
+                if (item.TryGetValue("candies", out var value))
+                {
+                    var result = Convert.ToInt32(value);
+                    if (result > 4)
+                    {
+                        item.TryGetValue("name", out var name);
+                        Console.WriteLine(name.ToString());
+                    }
+                }
+            }
+
+            foreach (var item in map)
+            {
+                if (item.TryGetValue("age", out var ages))
+                {
+                    var age = Convert.ToDouble(ages);
+                    Console.WriteLine(age);
+                }
+
+            }
         }
     }
 }

@@ -8,7 +8,7 @@ namespace HeWillNever
         public static void Main(string[] args)
         {
             string output = "";
-            int[] notSoCrypticMessage = {1, 12, 1, 2, 11, 1, 7, 11, 1, 49, 1, 3, 11, 1, 50, 11};
+            int[] notSoCrypticMessage = { 1, 12, 1, 2, 11, 1, 7, 11, 1, 49, 1, 3, 11, 1, 50, 11 };
 
             var map = new Dictionary<int, string>();
 
@@ -25,6 +25,30 @@ namespace HeWillNever
             // Your job is to decode the notSoCrypticMessage by using the hashmap as a look up table
             // Assemble the fragments into the out variable
 
+            // I dont know how to use a hash map
+
+            //Console.WriteLine(output);
+            //Hashtable hm = new Hashtable();
+            //hm.Add(notSoCrypticMessage, map);
+
+            //ICollection keys = hm.Keys;
+
+            //foreach (int k in keys)
+            //{
+            //    Console.WriteLine(hm[k]);
+            //}
+
+            for (int i = 0; i < notSoCrypticMessage.Length; i++)
+            {
+                foreach (var item in map)
+                {
+                    var itemKey = item.Key;
+                    if (itemKey == notSoCrypticMessage[i])
+                    {
+                        output += item.Value;
+                    }
+                }
+            }
             Console.WriteLine(output);
         }
     }

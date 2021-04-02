@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Vacation
 {
@@ -28,6 +29,31 @@ namespace Vacation
             Use the insertion sort algorithm
             Display the results to the console */
             InsertionSort(applicants);
+        }
+
+        private static void InsertionSort(List<int> applicants)
+        {
+            //applicants.Sort();
+            int[] inputArray = applicants.ToArray();
+            for (int i = 0; i < inputArray.Length - 1; i++)
+            {
+                for (int j = i + 1; j > 0; j--)
+                {
+                    if (inputArray[j - 1] > inputArray[j])
+                    {
+                        int temp = inputArray[j - 1];
+                        inputArray[j - 1] = inputArray[j];
+                        inputArray[j] = temp;
+                    }
+                }
+            }
+            var result = inputArray;
+            result.ToList();
+
+            foreach (int n in result)
+            {
+                Console.WriteLine(n);
+            }
         }
     }
 }

@@ -11,8 +11,17 @@ namespace AppendLetter
             // Create a method called AppendA() that adds "a" to every string in the animals list.
             // The parameter should be a list.
 
-            Console.WriteLine(AppendA(animals));
+            AppendA(animals);
             // Expected output: "boa", "anaconda", "koala", "panda", "zebra"
+        }
+        private static void AppendA(List<string> input)
+        {
+            foreach (var item in input)
+            {
+                StringBuilder sb = new StringBuilder(item);
+                sb.Append("a");
+                Console.Write($"{sb}, ");
+            }
         }
     }
 }

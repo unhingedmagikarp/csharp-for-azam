@@ -19,5 +19,25 @@ namespace Substrlist
             Console.WriteLine(Substrlist("not", searchArr));
             //  should print: `-1`  
         }
+        private static void Substrlist(string input, string[] searchArr)
+        {
+            if (input != "")
+            {
+                for (int i = 0; i < searchArr.Length; i++)
+                {
+                    //bool b = searchArr[i].Contains(input);
+                    int index = searchArr[i].IndexOf(input);
+                    if (index >= 0)
+                    {
+                        Console.WriteLine(index);
+                    }
+                    else
+                    {
+                        Console.WriteLine(-1);
+                    }
+                }
+            }
+
+        }
     }
 }

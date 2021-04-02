@@ -12,7 +12,11 @@ namespace TakesLonger
             // Insert the words "always takes longer than" between the words "It" and "you" using the StringBuilder class!
             // Use pieces of the quote variable (instead of just redefining the string)!
 
-            Console.WriteLine(quote);
+            StringBuilder sb = new StringBuilder(quote);
+            //sb.Insert(20, " always takes longer than");
+            //Console.WriteLine(sb);
+            sb.Insert(sb.ToString().IndexOf("It") + 2, " always takes longer than");
+            Console.WriteLine(sb.ToString());
         }
     }
 }
