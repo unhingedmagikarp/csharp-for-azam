@@ -68,22 +68,87 @@ namespace LicensePlateWords
             string fileLocation = @"S:\Work\Code\peter-keller\csharp-for-azam\week-1\day-5\assets\words.txt";
             //Todo ------------------------------------------------------------------------------------ TASK
 
-            LicensePlateWords("lmo", fileLocation);
+            LicensePlateWords(fileLocation);
         }
 
-        private static void LicensePlateWords(string userInput, string fileLocation)
+        private static void LicensePlateWords(string fileLocation)
         {
             StreamReader myReader = new StreamReader(fileLocation);
             string line = "";
-            List<string> stringData = new List<string>();
+            List<string> allLettersData = new List<string>();
+            List<string> allNumbersData = new List<string>();
 
             while ((line = myReader.ReadLine()) != null)
             {
-                //var singleLine = new String(line.Where(c => c != '-' && (c < '0' || c > '9')).ToArray());
-                var singleLine = Regex.Replace(line, @"(\d|\s|_|@|\.|,|-)", string.Empty);
-                stringData.Add(String.Join("", singleLine));
+                if (Regex.IsMatch(line, @"^\d+"))
+                {
+                    var singleLine = Regex.Replace(line, @"(\d|\s|_|@|\.|,|-|\|)", string.Empty);
+                    allNumbersData.Add(String.Join("", singleLine));
+                }
+                else
+                {
+                    var splitWord = line.Replace("\t", " ");
+                    var twoWords = splitWord.Split(" ");
+                    foreach (var word in twoWords)
+                    {
+                        allLettersData.Add(word);
+                    }
+                }
             }
-            Debugger.Break();
+            List<string> outputList = new List<string>();
+
+            Console.WriteLine("Enter word to check for possible number plate words");
+            string userWord = Console.ReadLine();
+            string formattedUserInput = userWord.ToLower();
+            string[] vowels = { "a", "e", "i", "o", "u" };
+            int value;
+            if (!int.TryParse(formattedUserInput, out value) && formattedUserInput != String.Empty)
+            {
+                Console.WriteLine("Valid");
+                // A, E, I, O, U
+                if (formattedUserInput.StartsWith("a") ||
+                    formattedUserInput.StartsWith("e") ||
+                    formattedUserInput.StartsWith("i") ||
+                    formattedUserInput.StartsWith("o") ||
+                    formattedUserInput.StartsWith("u"))
+                {
+                    foreach (var word in allLettersData)
+                    {
+                        foreach (var vowel in vowels)
+                        {
+                            if (word.StartsWith(vowel) && word.Length > 1 && word[1] != vowel[0] && word.Length < 6)
+                            {
+                                outputList.Add(word);
+                            }
+                        }
+
+                    }
+                    foreach (var word in outputList)
+                    {
+                        Console.WriteLine(word);
+                    }
+
+                }
+                else
+                {
+                    foreach (var word in allLettersData)
+                    {
+                        if (word.Length > 1 && formattedUserInput[1] == word[1] && word.Length < 6)
+                        {
+                            outputList.Add(word);
+                        }
+                    }
+                    foreach (var word in outputList)
+                    {
+                        Console.WriteLine(word);
+                    }
+                }
+            }
+            else
+            {
+                Console.WriteLine("Input not valid, enter again");
+                LicensePlateWords(fileLocation);
+            }
         }
     }
 }
