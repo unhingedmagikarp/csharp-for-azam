@@ -79,3 +79,5 @@ public static int FactorialWithRecursion(int n)
   ![hexagons](assets/hexagons.png)
 
 [art-of-roughness]: https://www.ted.com/talks/benoit_mandelbrot_fractals_the_art_of_roughness?language=en
+
+![circles](../../assets/azam.gif)

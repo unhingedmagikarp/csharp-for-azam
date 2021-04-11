@@ -16,3 +16,5 @@
 ### Project of the week
 
 Create a fractal from a variety of examples.
+
+![circles](../assets/azam.gif)

@@ -189,3 +189,5 @@ namespace Example
   [here](assets/encoded-lines.txt)
 - [Lottery](lottery/Lottery.cs), source file is [here](assets/lottery.csv)
 - [Licence Plate](create-licence-plate/licence-plate.md), source file is [here](assets/words.txt)
+
+![circles](../../assets/azam.gif)

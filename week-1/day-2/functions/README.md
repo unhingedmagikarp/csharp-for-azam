@@ -70,3 +70,5 @@ exercises.
 - [Palindrome builder](palindrome-builder/README.md)
 - [Palindrome searcher](palindrome-searcher/README.md)
 - [Sort that list](bubble/Bubble.cs)
+
+![circles](../../../assets/azam.gif)

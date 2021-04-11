@@ -18,3 +18,5 @@
 ### Project of the week
 
 Using the basic concepts of programming and drawing a more complex design.
+
+![circles](../assets/azam.gif)

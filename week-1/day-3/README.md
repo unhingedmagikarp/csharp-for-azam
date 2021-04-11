@@ -93,3 +93,5 @@ characters.
 - [Guess my number](guess-my-number/README.md)
 - [Josephus Problem*](josephus-problem/README.md)
 - [Armstrong Number*](armstrong-number/README.md)
+
+![circles](../../assets/azam.gif)

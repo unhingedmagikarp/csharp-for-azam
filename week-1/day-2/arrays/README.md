@@ -72,3 +72,5 @@ namespace Example
 - [Swap elements](swap-elements/SwapElements.cs)
 - [Sum all elements](sum-all/SumAll.cs)
 - [Reverse list](reverse/Reverse.cs)
+
+![circles](../../../assets/azam.gif)

@@ -157,3 +157,5 @@ public static void DrawGreenPolygon(FoxDraw foxDraw)
 - [Starry night](starry-night/StarryNight.cs)
 
 [basic-drawing-in-wpf]: https://docs.microsoft.com/en-us/dotnet/framework/wpf/graphics-multimedia/shapes-and-basic-drawing-in-wpf-overview
+
+![circles](../../assets/azam.gif)
