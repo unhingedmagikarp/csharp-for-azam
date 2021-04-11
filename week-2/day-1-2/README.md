@@ -182,7 +182,7 @@ class FamilyMember
 }
 ```
 
-- [Post-it](post-it/cs.md)
+- [Post-it](post-it/README.md)
 - [BlogPost](blog-post/README.md)
 
 ### Encapsulation and Constructor
@@ -241,8 +241,8 @@ namespace PracticeTask
 ```
 
 - [Animal](animal/README.md)
-- [Sharpie](sharpie/cs.md)
-- [Counter](counter/cs.md)
+- [Sharpie](sharpie/README.md)
+- [Counter](counter/README.md)
 
 ### Use Class
 
@@ -300,7 +300,7 @@ namespace PracticeTask
 ### Complex Architectures
 
 - [Teachers and Students](teachers-and-students/README.md)
-- [Petrol Station](petrol-station/cs.md)
+- [Petrol Station](petrol-station/README.md)
 
 ### Classes as Fields
 
@@ -340,13 +340,13 @@ class Book
 }
 ```
 
-- [Sharpie Set](sharpie-set/cs.md)
+- [Sharpie Set](sharpie-set/README.md)
 - [Farm](farm/README.md)
 - [Blog](blog/README.md)
 
 ### All together
 
-- [Pirates](pirates/cs.md) *exam*
+- [Pirates](pirates/README.md) *exam*
 - Redo the 5 trees homework (with classes)
 
 [1]: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/static-classes-and-static-class-members
