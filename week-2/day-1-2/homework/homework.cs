@@ -15,14 +15,11 @@ namespace homework
                - you can use just variables, or lists and/or maps
              */
 
-            var tree1 = new Tree();
-
-            tree1.treeType.Add("Oak");
-            tree1.leafColor.Add("green");
-            tree1.age = 300;
-            tree1.sex = "Male";
-
-            // repeat for 5 trees
+            Tree tree1 = new Tree(14, "Green", "Male", "Oak");
+            Tree tree2 = new Tree(15, "Black", "Female", "Willow");
+            Tree tree3 = new Tree(146, "Blue", "Male", "Yew");
+            Tree tree4 = new Tree(123, "White", "Male", "Ivory");
+            Tree tree5 = new Tree(142, "Pink", "Male", "Normal");
         }
 
     }
