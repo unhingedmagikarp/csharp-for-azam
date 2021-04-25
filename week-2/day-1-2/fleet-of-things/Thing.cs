@@ -4,8 +4,8 @@ namespace FleetOfThings
 {
     public class Thing
     {
-        private string Name;
-        private bool Completed;
+        public readonly string Name;
+        public bool Completed;
 
         public Thing(string name)
         {

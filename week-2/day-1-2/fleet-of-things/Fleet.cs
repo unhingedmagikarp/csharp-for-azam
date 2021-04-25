@@ -5,16 +5,32 @@ namespace FleetOfThings
 {
     public class Fleet
     {
-        private List<Thing> Things;
+        private readonly List<Thing> _things;
 
         public Fleet()
         {
-            Things = new List<Thing>();
+            _things = new List<Thing>();
         }
 
         public void Add(Thing thing)
         {
-            Things.Add(thing);
+            _things.Add(thing);
+        }
+
+        public void Print()
+        {
+            foreach (var thing in _things)
+            {
+                if (thing.Completed)
+                {
+                    Console.WriteLine($"[x] {thing.Name}");
+                }
+                else
+                {
+                    Console.WriteLine($"[ ] {thing.Name}");
+                }
+
+            }
         }
     }
 }
