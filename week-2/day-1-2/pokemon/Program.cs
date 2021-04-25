@@ -19,7 +19,7 @@ namespace PracticeTask
 
       // Which pokemon should Ash use?
 
-      Console.Write("I choose you, ");
+      Console.Write("I choose you, Charizard");
     }
 
     private static List<Pokemon> InitializePokemon()
