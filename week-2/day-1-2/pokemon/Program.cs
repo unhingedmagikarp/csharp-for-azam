@@ -17,10 +17,16 @@ namespace PracticeTask
 
       Pokemon wildPokemon = new Pokemon("Oddish", "leaf", "water");
 
-      // Which pokemon should Ash use?
+            // Which pokemon should Ash use?
 
-      Console.Write("I choose you, Charizard");
-    }
+            foreach (var pokemon in pokemonOfAsh)
+            {
+                if (pokemon.EffectiveAgainst == "leaf")
+                {
+                    Console.Write($"I choose you, {pokemon.Name}");
+                }
+            }
+        }
 
     private static List<Pokemon> InitializePokemon()
     {
